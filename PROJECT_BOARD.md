@@ -225,3 +225,22 @@ This repository serves `marriage_nsfg_female.csv.gz` publicly from GitHub. That 
 - `jb/_config.yml` → `html: extra_footer` loads `https://greenteapress.com/gh.gif?u=PAGE&r=REFERRER` on every page (`5bea17f`; gh-pages `fc5e344`). No cookies, no third party; counted from the greenteapress.com access logs by `~/GreenTeaPress/scripts/log_report.py` ("GitHub Pages" section of the weekly report). Details and rollout to other books: GreenTeaPress `PROJECT_BOARD.md`, Task 15.
 - Keep the `extra_footer` block when editing `_config.yml`; if the build moves to Jupyter Book 2 / MyST, put the same snippet in the new template.
 - Publishing note: the site was rebuilt from a clean clone (`jb/build.sh` minus `ghp-import`), diffed against the live gh-pages, then pushed with `ghp-import -n -p -f BUILD/html`; only the footer changed.
+
+---
+
+## Task 7: Search engine optimization for the book site
+
+**Status:** In progress (2026-10-23)
+
+**Context:** Help people searching for the book's topics find `https://allendowney.github.io/ThinkStats/`, using ordinary good practice only. Shared guide: `~/GreenTeaPress/plans/seo.md` ("Checklist for a Jupyter Book 1 site"); same pattern as Think Python (ThinkPython Task 13). Rollout is tracked in GreenTeaPress Task 22. Audit 2026-10-18: no meta descriptions, no sitemap; the landing-page title repeated ("Think Stats, 3rd edition — Think Stats, 3rd edition").
+
+Done 2026-10-23, without the jupytext `split_at_heading` step (not about SEO):
+- [x] `sphinx-sitemap` + `sphinxext-opengraph` (in `environment-dev.yml`, `requirements-dev.txt`, and pip-installed in the `ThinkStats` env), base URL, cover image (`think_stats_3e_cover_medium.jpg`) in `jb/_config.yml`; `extra_footer` page-view counter kept
+- [x] Descriptions (Allen reviewed): `jb/descriptions.yml` for the 15 chapter and 6 example notebooks, which `jb/prep_notebooks.py` writes into the copied notebooks' metadata (so `soln/` and `examples/` are untouched); front matter in `index.md` and `time_series.md` (the PyData 2024 tutorial page, not in the TOC but in the sitemap). **New chapter or example → add its line to `descriptions.yml`.**
+- [x] Landing H1 "Think Stats: Exploratory Data Analysis in Python"
+- [x] Typos fixed (Allen): "Thinks Stats" in the examples, "is it not necessary" in chapter 8 (`soln/`, `nb/`, and the `.md` pairs)
+- [x] Test build: 23 pages, each with one description, one og:description, canonical, counter; sitemap = TOC + `time_series.html`
+- [ ] Publish (`jb/build.sh`, after deleting `jb/_build/`); `Sitemap:` line in `~/AllenDowney.github.io/robots.txt`; Allen submits it in Search Console
+- [x] GitHub repo website field and topics (GreenTeaPress `scripts/repo_about.sh`); the README links the site
+- [ ] Compare at ~6 weeks and ~3 months: `python3 ~/GreenTeaPress/scripts/search_console.py --report --path /ThinkStats/` and the counter's google.com referrers
+---

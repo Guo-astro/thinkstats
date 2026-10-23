@@ -14,7 +14,7 @@ jupyter:
 
 # How Binomial is Skeet Shooting?
 
-This notebook contains an example based on Chapter 5 of [Thinks Stats 3e](https://allendowney.github.io/ThinkStats/).
+This notebook contains an example based on Chapter 5 of [Think Stats 3e](https://allendowney.github.io/ThinkStats/).
 
 The third edition is available now from [Bookshop.org](https://bookshop.org/a/98697/9781098190255) and [Amazon](https://amzn.to/42lmxwu) (those are affiliate links). If you find this book useful, please consider [supporting free, open educational materials](https://greenteapress.com/support/?book=ts3) from Green Tea Press.
 

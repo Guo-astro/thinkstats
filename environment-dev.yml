@@ -12,6 +12,8 @@ dependencies:
   # Jupyter Book (jb/build.sh) — jb/ config is for the 1.x CLI, not 2.x
   - "jupyter-book<2"
   - ghp-import
+  - sphinx-sitemap
+  - sphinxext-opengraph
   - pip:
     - nbformat
 

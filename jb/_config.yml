@@ -12,6 +12,7 @@ execute:
 repository:
   url: https://github.com/AllenDowney/ThinkStats/tree/v3
 html:
+  baseurl: https://allendowney.github.io/ThinkStats/
   use_repository_button: true
   # Page-view counter: one request per page view to greenteapress.com/gh.gif,
   # counted from the greenteapress.com access logs (GreenTeaPress scripts/log_report.py).
@@ -41,7 +42,20 @@ sphinx:
   # Merge html_theme_options below into the ones JB sets (repository button, search text)
   # instead of replacing them.
   recursive_update: true
+  # Sitemap and link previews (GreenTeaPress plans/seo.md); page descriptions are in
+  # descriptions.yml (notebooks) and the front matter of index.md and time_series.md
+  extra_extensions:
+    - sphinx_sitemap
+    - sphinxext.opengraph
   config:
+    html_baseurl: https://allendowney.github.io/ThinkStats/
+    sitemap_url_scheme: "{link}"
+    sitemap_excludes: [genindex.html, search.html]
+    ogp_site_url: https://allendowney.github.io/ThinkStats/
+    ogp_site_name: Think Stats, 3rd edition
+    ogp_image: https://raw.githubusercontent.com/AllenDowney/ThinkStats/v3/think_stats_3e_cover_medium.jpg
+    ogp_image_alt: Cover of Think Stats, 3rd edition, by Allen B. Downey
+    ogp_enable_meta_description: false
     # Carbon ad above "Contents" in the right sidebar (_templates/carbon.html, _static/carbon.css).
     templates_path: [_templates]
     html_theme_options:

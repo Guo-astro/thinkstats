@@ -21,7 +21,7 @@ Suppose you live in a town with a population of 10,000 people, and you want to p
 In theory, you could ask everyone in town who they plan to vote for, and if they all answered honestly, you could make a reliable prediction.
 
 But even in a small town, it is probably not practical to survey the entire population.
-Fortunately, is it not necessary.
+Fortunately, it is not necessary.
 If you survey a random subset of the people, you can use the sample to infer the voting preferences of the population.
 This process -- using a sample to make inferences about a population -- is called statistical inference.
 

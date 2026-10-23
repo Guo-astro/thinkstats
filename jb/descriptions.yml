@@ -1,0 +1,88 @@
+# Page descriptions for search results and link previews (GreenTeaPress plans/seo.md).
+# prep_notebooks.py writes each one into its notebook's metadata as
+# myst.html_meta.description and og:description. index.md and time_series.md carry
+# theirs in front matter. About 120-155 characters, in the words a reader would search for.
+
+chap00: >-
+  Preface to Think Stats, 3rd edition: statistics as tools for working with data,
+  what's new in this edition, and how to run the code.
+
+chap01: >-
+  Exploratory data analysis in Python with pandas: read, validate, and transform survey
+  data from the NSFG, and ask whether first babies arrive late.
+
+chap02: >-
+  Distributions in Python: frequency tables, outliers, and effect size, using NSFG
+  pregnancy data to compare first babies and others.
+
+chap03: >-
+  Probability mass functions in Python: PMFs, mean, variance, and skewness, and the class
+  size paradox, an example of the inspection paradox.
+
+chap04: >-
+  Cumulative distribution functions in Python: percentiles, percentile ranks, comparing
+  CDFs, percentile-based statistics, and random numbers.
+
+chap05: >-
+  Modeling data with the binomial, Poisson, exponential, normal, and lognormal
+  distributions in Python, and why theoretical models are useful.
+
+chap06: >-
+  Probability density functions in Python: comparing PMFs and PDFs, the exponential and
+  normal PDFs, and kernel density estimation (KDE).
+
+chap07: >-
+  Relationships between variables in Python: scatter plots, decile plots, Pearson and
+  rank correlation, and correlation versus causation.
+
+chap08: >-
+  Statistical estimation in Python: robust estimators, sampling distributions, standard
+  error, confidence intervals, and sources of error.
+
+chap09: >-
+  Hypothesis testing in Python with simulation: testing differences in means,
+  correlations, and proportions, and what p-values mean.
+
+chap10: >-
+  Least squares in Python: fit a line to data, the coefficient of determination, minimize
+  mean squared error, and visualize uncertainty in the fit.
+
+chap11: >-
+  Multiple regression in Python with StatsModels: control variables, nonlinear
+  relationships, and logistic regression.
+
+chap12: >-
+  Time series analysis in Python with StatsModels: seasonal decomposition, prediction,
+  autoregression, moving average, and ARIMA models.
+
+chap13: >-
+  Survival analysis in Python: survival and hazard functions, Kaplan-Meier estimation
+  with lifelines, and age at first marriage in the United States.
+
+chap14: >-
+  Analytic methods in statistics: normal probability plots, the central limit theorem,
+  correlation and chi-squared tests, and combining them with computation.
+
+binom_skeet: >-
+  How binomial is skeet shooting? Checking whether hits and misses in international
+  skeet competitions follow a binomial distribution, with Python.
+
+ripoff_etf: >-
+  Are buffer ETFs a rip-off? Capped returns compared with buy-and-hold, using Dow Jones
+  data back to 1885, an example from Think Stats.
+
+fourier: >-
+  How Fourier components work in regression models: recovering the frequency, amplitude,
+  and phase of a periodic signal with linear regression in Python.
+
+temperature: >-
+  Downloading data from Our World in Data with its API, using air temperature data, an
+  example for the time series chapter of Think Stats.
+
+variability: >-
+  Testing the variability hypothesis, that males are more variable than females, with
+  BRFSS heights and weights: standard deviations, CVs, and IQRs.
+
+moneyline: >-
+  Don't bet on the Super Bowl: converting moneyline odds to implied probabilities and
+  computing the bookmaker's take, with Python.

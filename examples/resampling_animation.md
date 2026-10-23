@@ -14,7 +14,7 @@ jupyter:
 
 # Resampling animation
 
-This notebook contains a supporting example for [Thinks Stats 3e](https://allendowney.github.io/ThinkStats/).
+This notebook contains a supporting example for [Think Stats 3e](https://allendowney.github.io/ThinkStats/).
 
 *Think Stats* is available now from [Bookshop.org](https://bookshop.org/a/98697/9781098190255) and [Amazon](https://amzn.to/42lmxwu) (affiliate links). If you find this book useful, please consider [supporting free, open educational materials](https://greenteapress.com/support/?book=ts3) from Green Tea Press.
 
