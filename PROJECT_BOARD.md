@@ -230,7 +230,7 @@ This repository serves `marriage_nsfg_female.csv.gz` publicly from GitHub. That 
 
 ## Task 7: Search engine optimization for the book site
 
-**Status:** In progress (2026-10-23)
+**Status:** DONE (2026-10-23; comparisons pending)
 
 **Context:** Help people searching for the book's topics find `https://allendowney.github.io/ThinkStats/`, using ordinary good practice only. Shared guide: `~/GreenTeaPress/plans/seo.md` ("Checklist for a Jupyter Book 1 site"); same pattern as Think Python (ThinkPython Task 13). Rollout is tracked in GreenTeaPress Task 22. Audit 2026-10-18: no meta descriptions, no sitemap; the landing-page title repeated ("Think Stats, 3rd edition — Think Stats, 3rd edition").
 
@@ -240,7 +240,7 @@ Done 2026-10-23, without the jupytext `split_at_heading` step (not about SEO):
 - [x] Landing H1 "Think Stats: Exploratory Data Analysis in Python"
 - [x] Typos fixed (Allen): "Thinks Stats" in the examples, "is it not necessary" in chapter 8 (`soln/`, `nb/`, and the `.md` pairs)
 - [x] Test build: 23 pages, each with one description, one og:description, canonical, counter; sitemap = TOC + `time_series.html`
-- [ ] Publish (`jb/build.sh`, after deleting `jb/_build/`); `Sitemap:` line in `~/AllenDowney.github.io/robots.txt`; Allen submits it in Search Console
+- [x] Published 2026-10-23 (gh-pages `fd4d4e1`; `jb/_build/` deleted first); `Sitemap:` line in `~/AllenDowney.github.io/robots.txt`; Allen submitted it in Search Console (2026-10-23)
 - [x] GitHub repo website field and topics (GreenTeaPress `scripts/repo_about.sh`); the README links the site
 - [ ] Compare at ~6 weeks and ~3 months: `python3 ~/GreenTeaPress/scripts/search_console.py --report --path /ThinkStats/` and the counter's google.com referrers
 ---
